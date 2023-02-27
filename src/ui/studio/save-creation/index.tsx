@@ -417,6 +417,8 @@ const UploadForm = ({ uploadState, handleUpload }) => {
   // `presenter` values in the studio state always equal the current value in
   // the input.
   function handleInputChange(event) {
+    console.log('Äasdf');
+
     const target = event.target;
     dispatch({
       type: { title: 'UPDATE_TITLE', presenter: 'UPDATE_PRESENTER' }[target.name],
